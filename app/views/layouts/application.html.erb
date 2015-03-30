@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support Quiz</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= image_tag "https://pbs.twimg.com/profile_images/2191794231/image.jpg", class: "profile_pic" %>
+<br>
+<%= link_to "Home", root_path %> |
+<%= link_to "All Requests", requests_path %>
+<hr>
+
+<%= yield %>
+
+</body>
+</html>
