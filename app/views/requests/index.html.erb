@@ -29,7 +29,7 @@
           <% if request.done == 0 %>
             <%= form_for request do |c| %>
               <%= c.hidden_field :done, :value => 1 %>
-              <%= c.submit "NotDone" %>
+              <%= c.submit "Not Done" %>
             <% end %>
           <% elsif request.done == 1 %>
             <%= form_for request do |c| %>
